@@ -1,0 +1,75 @@
+.imageButton {
+    position: relative;
+    height: 200px;
+  }
+  
+  @media (max-width: 600px) {
+    .imageButton {
+      width: 100% !important;
+      height: 100px;
+    }
+  }
+  
+  .imageButton:hover,
+  .imageButton.Mui-focusVisible {
+    z-index: 1;
+  }
+  
+  .imageButton:hover .MuiImageBackdrop-root,
+  .imageButton.Mui-focusVisible .MuiImageBackdrop-root {
+    opacity: 0.15;
+  }
+  
+  .imageButton:hover .MuiImageMarked-root,
+  .imageButton.Mui-focusVisible .MuiImageMarked-root {
+    opacity: 0;
+  }
+  
+  .imageButton:hover .MuiTypography-root,
+  .imageButton.Mui-focusVisible .MuiTypography-root {
+    border: 4px solid currentColor;
+  }
+  
+  .imageSrc {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center 40%;
+  }
+  
+  .image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .imageBackdrop {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.4;
+    transition: opacity 0.5s;
+  }
+  
+  .imageMarked {
+    height: 3px;
+    width: 18px;
+    background-color: white;
+    position: absolute;
+    bottom: -2px;
+    left: calc(50% - 9px);
+    transition: opacity 0.5s;
+  }
+  
